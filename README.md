@@ -38,11 +38,16 @@ Este projeto demonstra a utilização do Eureka Server como serviço de registro
 4.  **Construa e execute os serviços clientes:**
 
     ```bash
-    # Para cada serviço cliente (notification-service, task-service, user-service)
+    cd user-service
+    ./mvnw spring-boot:run
+    ```
+    ```bash
+    cd task-service
+    ./mvnw spring-boot:run
+    ```
+    ```bash
     cd notification-service
     ./mvnw spring-boot:run
-
-    # Repita o processo para os outros serviços
     ```
 
 5.  **Acesse o Eureka Server:**
