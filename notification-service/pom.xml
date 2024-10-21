@@ -11,7 +11,8 @@
     <groupId>com.service</groupId>
     <artifactId>notification-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>notification</name>
+    <packaging>jar</packaging>
+    <name>notification-service</name>
     <description>Notification Service</description>
     <url/>
     <licenses>

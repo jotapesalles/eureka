@@ -11,7 +11,8 @@
     <groupId>com.service</groupId>
     <artifactId>task-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>task</name>
+    <packaging>jar</packaging>
+    <name>task-service</name>
     <description>Task Service</description>
     <url/>
     <licenses>
