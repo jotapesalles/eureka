@@ -1,0 +1,29 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+      - id: user-service
+        uri: lb://USER-SERVICE
+        predicates:
+          - Path=/users/**
+      - id: task-service
+        uri: lb://TASK-SERVICE
+        predicates:
+          - Path=/tasks/**
+      - id: notification-service
+        uri: lb://NOTIFICATION-SERVICE
+        predicates:
+          - Path=/notifications/**
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
